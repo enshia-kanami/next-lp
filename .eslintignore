@@ -1,0 +1,3 @@
+node_modules/
+tailwind.config.js
+// node_modules ディレクトリ内のファイルは ESLint の対象外
