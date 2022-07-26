@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* tailwindのベースを設定 */
+/* tailwindのベースを設定
 @layer base { 
     body {
       @apply font-ja leading-relaxed tracking-wider;
     }
-  }
+  } */
