@@ -1,29 +1,19 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser", // tsconfig.json のパスを設定 TypeScript用のパーサー設定
-  "parserOptions": {
-    "project": "./tsconfig.json" // プロジェクト内の型認識に使用
-  },
-  "extends": [ // extendsによってすでに設定されているものがある
+  "extends": [
+    // extendsによってすでに設定されているものがある
     "next/core-web-vitals",
     "eslint:recommended",
     // plugin:の後にパッケージ名/設定名を指定する
     // パッケージ名は省略した形で指定できる
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier",// 衝突しないように連携させる
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "prettier" // 衝突しないように連携させる
   ],
-  "plugins": [
-    "import",
-    "unused-imports",
-    "tailwindcss"
-  ],
+  "plugins": ["import", "unused-imports", "tailwindcss"],
   "rules": {
-    // あった方が良さそうなルール
-    "semi": "error",
-    "no-console": "warn",
-    "no-var": "error",
     // import 文の順序に関するルール
     "sort-imports": 0,
     "no-unused-vars": "warn",

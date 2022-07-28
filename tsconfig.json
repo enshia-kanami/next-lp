@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",  //importを絶対パスで書ける
+    "baseUrl": ".", //importを絶対パスで書ける
     "paths": {
       "@/*": ["./src/*"] //./src/components を @/componentsで書ける
     },
@@ -19,6 +19,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/posts/NewsDetail.js"],
   "exclude": ["node_modules"]
 }
