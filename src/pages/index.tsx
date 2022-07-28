@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import News from '@/components/layouts/News/News';
+import News from '@/components/News/News';
 
 function Home() {
   return (
@@ -7,9 +7,6 @@ function Home() {
       <Head>
         <title>Next.js LP</title>
       </Head>
-      <div className='container'>
-        <News />
-      </div>
     </>
   );
 }
