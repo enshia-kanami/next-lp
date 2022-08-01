@@ -5,8 +5,3 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* tailwindのベースを設定 */
-@layer base {
-  body {
-    @apply font-ja leading-relaxed tracking-wider;
-  }
-}
