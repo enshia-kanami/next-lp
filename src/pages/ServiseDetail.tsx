@@ -1,5 +1,11 @@
+import Layout from '@/components/Layout';
+
 function Servise() {
-  return <p className='mt-24'>詳細ページ</p>;
+  return (
+    <Layout title='ServiseDetail'>
+      <p className='mt-24'>詳細ページ</p>
+    </Layout>
+  );
 }
 
 export default Servise;
