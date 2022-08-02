@@ -1,11 +1,11 @@
 import Layout from '@/components/Layout';
 
-function CompanyDetail() {
+export default function CompanyDetail() {
   return (
-    <Layout title='CompanyDetail'>
-      <p>詳細ページ</p>
-    </Layout>
+    <>
+      <Layout title='CompanyDetail'>
+        <p>詳細ページ</p>
+      </Layout>
+    </>
   );
 }
-
-export default CompanyDetail;
