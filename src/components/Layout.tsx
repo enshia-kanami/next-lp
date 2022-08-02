@@ -11,18 +11,16 @@ type Props = {
 export default function Layout({ children, title, description }: Props) {
   const pageTitle = title || 'ホームページタイトル';
   return (
-    <div className='wrap'>
+    <>
       <Head>
         <title>{pageTitle}</title>
         <meta name='description' content={description || 'ホームページ概要'} />
       </Head>
-      <div className='container'>
-        <Header />
-        <div className='mx-auto'>
-          <main>{children}</main>
-          <Footer />
-        </div>
+      <Header />
+      <div className='container mx-auto'>
+        <main>{children}</main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }
